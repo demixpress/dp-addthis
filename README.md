@@ -3,12 +3,12 @@ Makes it even easier and better to display AddThis tools (share buttons, follow 
 
 === Plugin Name ===
 
-Contributors: demixpress
-Tags: addthis, sharing, share,, follow, recommended-content
-Requires at least: 4.1
-Tested up to: 4.4
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+* Contributors: demixpress
+* Tags: addthis, sharing, share,, follow, recommended-content
+* Requires at least: 4.1
+* Tested up to: 4.4
+* License: GPLv2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Makes it even easier and better to display AddThis tools (share buttons, follow buttons and recommended contents) on your WordPress site.
 
