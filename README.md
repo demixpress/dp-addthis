@@ -2,6 +2,7 @@
 Makes it even easier and better to display AddThis tools (share buttons, follow buttons and recommended contents) on your WordPress site.
 
 === Plugin Name ===
+
 Contributors: demixpress
 Tags: addthis, sharing, share,, follow, recommended-content
 Requires at least: 4.1
