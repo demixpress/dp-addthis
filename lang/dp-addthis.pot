@@ -1,0 +1,247 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DP AddThis\n"
+"POT-Creation-Date: 2015-12-12 18:31+0800\n"
+"PO-Revision-Date: 2015-12-12 17:31+0800\n"
+"Last-Translator: DemixPress <demixpress@gmail.com>\n"
+"Language-Team: DemixPress <demixpress@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: dp-addthis.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/admin.php:11 admin/admin.php:35
+msgid "(dp) Addthis"
+msgstr ""
+
+#: admin/admin.php:121
+msgid "General"
+msgstr ""
+
+#: admin/admin.php:122
+msgid "Inline Tools"
+msgstr ""
+
+#: admin/admin.php:123
+msgid "Smart Layers"
+msgstr ""
+
+#: admin/admin.php:124
+msgid "Custom CSS"
+msgstr ""
+
+#: admin/admin.php:145
+msgid "Profile ID"
+msgstr ""
+
+#: admin/admin.php:156
+msgid "Is Addthis Pro?"
+msgstr ""
+
+#: admin/admin.php:163
+msgid "Analytics"
+msgstr ""
+
+#: admin/admin.php:174
+msgid "Click Tracking"
+msgstr ""
+
+#: admin/admin.php:188
+msgid "Address Bar Tracking"
+msgstr ""
+
+#: admin/admin.php:195
+msgid "Google Analytics Tracking ID"
+msgstr ""
+
+#: admin/admin.php:222 admin/admin.php:252
+msgid "Tool"
+msgstr ""
+
+#: admin/admin.php:223 admin/admin.php:253
+msgid "Context"
+msgstr ""
+
+#: admin/admin.php:224
+msgid "Location"
+msgstr ""
+
+#: admin/admin.php:239 admin/admin.php:269
+msgid "Add Rule"
+msgstr ""
+
+#: admin/admin.php:335
+msgid "Before Post Content"
+msgstr ""
+
+#: admin/admin.php:336
+msgid "After Post Content"
+msgstr ""
+
+#: admin/admin.php:337
+msgid "Before Post Excerpt"
+msgstr ""
+
+#: admin/admin.php:338
+msgid "After Post Excerpt"
+msgstr ""
+
+#: dp-addthis.php:463
+msgid "Home"
+msgstr ""
+
+#: dp-addthis.php:468
+msgid "Single"
+msgstr ""
+
+#: dp-addthis.php:475
+#, php-format
+msgid "Single: %s"
+msgstr ""
+
+#: dp-addthis.php:481
+msgid "Archive"
+msgstr ""
+
+#: dp-addthis.php:486
+msgid "Post Type Archive: Post"
+msgstr ""
+
+#: dp-addthis.php:493
+#, php-format
+msgid "Post Type Archive: %s"
+msgstr ""
+
+#: dp-addthis.php:499
+msgid "Taxonomy Archive"
+msgstr ""
+
+#: dp-addthis.php:504
+#, php-format
+msgid "Taxonomy Archive: %s"
+msgstr ""
+
+#: dp-addthis.php:509
+msgid "Date Archive"
+msgstr ""
+
+#: dp-addthis.php:512
+msgid "Author Archive"
+msgstr ""
+
+#: dp-addthis.php:515
+msgid "Search Results"
+msgstr ""
+
+#: dp-addthis.php:535
+msgid "Sharing Buttons"
+msgstr ""
+
+#: dp-addthis.php:543
+msgid "Original Sharing Toolbox"
+msgstr ""
+
+#: dp-addthis.php:551
+msgid "Mobile Sharing Toolbar"
+msgstr ""
+
+#: dp-addthis.php:559
+msgid "Mobile Toolbar"
+msgstr ""
+
+#: dp-addthis.php:567
+msgid "Sharing Sidebar"
+msgstr ""
+
+#: dp-addthis.php:575
+msgid "Sharing Sidebar Counters"
+msgstr ""
+
+#: dp-addthis.php:583
+msgid "Responsive Sharing Buttons"
+msgstr ""
+
+#: dp-addthis.php:591
+msgid "Jumbo Share Counter"
+msgstr ""
+
+#: dp-addthis.php:599
+msgid "Custom Sharing Buttons"
+msgstr ""
+
+#: dp-addthis.php:610
+msgid "Custom Follow Buttons"
+msgstr ""
+
+#: dp-addthis.php:618
+msgid "Follow Header"
+msgstr ""
+
+#: dp-addthis.php:626
+msgid "Horizontal Follow Buttons"
+msgstr ""
+
+#: dp-addthis.php:634
+msgid "Vertical Follow Buttons"
+msgstr ""
+
+#: dp-addthis.php:645
+msgid "Recommended Content Drawer"
+msgstr ""
+
+#: dp-addthis.php:653
+msgid "Recommended Content Toaster"
+msgstr ""
+
+#: dp-addthis.php:661
+msgid "Jumbo Recommended Content Footer"
+msgstr ""
+
+#: dp-addthis.php:669
+msgid "Recommended Content Footer"
+msgstr ""
+
+#: dp-addthis.php:677
+msgid "Horizontal Recommended Content"
+msgstr ""
+
+#: dp-addthis.php:685
+msgid "Vertical Recommended Content"
+msgstr ""
+
+#: dp-addthis.php:693
+msgid "What's Next"
+msgstr ""
+
+#: dp-addthis.php:701
+msgid "What's Next Mobile"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "(dp) AddThis"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://demixpress.com/plugins/dp-addthis/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Displays AddThis tools on your site."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "DemixPress"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://demixpress.com/"
+msgstr ""
