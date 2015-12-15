@@ -4,7 +4,7 @@
  * Plugin Name: (dp) AddThis
  * Plugin URI: http://demixpress.com/plugins/dp-addthis/
  * Description: Makes it even easier and better to display AddThis tools (share buttons, follow buttons and recommended contents) on your WordPress site.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: DemixPress
  * Author URI: http://demixpress.com/
  * Requires: 4.1 or higher
