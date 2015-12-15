@@ -41,9 +41,11 @@ class DP_AddThis_Plugin {
 	function init() {
 		$pubid = get_option( 'dp_addthis_pubid' );
 
-		if ( $pubid && $this->has_tool() ) {
+		if ( $pubid) {
 			// enqueue scripts and styles
-			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+			if($this->has_tool())
+				add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+
 			add_action( 'wp_head', array( $this, 'enqueue_styles' ) );
 
 			// inline tools
@@ -99,11 +101,15 @@ class DP_AddThis_Plugin {
 	 */
 	function prepare_inline_tools_filters() {
 		$rules    = dp_addthis_get_rules( 'inline_tools' );
-		$contexts = dp_addthis_get_contexts();
 
-		foreach ( $rules as $rule ) {
-			if ( in_array( $rule['context'], $contexts ) ) {
-				array_push( $this->inline_tools_filters, new DP_AddThis_Inline_Tool_Filter( $rule ) );
+
+		if(!empty($rules)) {
+			$contexts = dp_addthis_get_contexts();
+
+			foreach ( $rules as $rule ) {
+				if ( in_array( $rule['context'], $contexts ) ) {
+					array_push( $this->inline_tools_filters, new DP_AddThis_Inline_Tool_Filter( $rule ) );
+				}
 			}
 		}
 	}
@@ -114,20 +120,25 @@ class DP_AddThis_Plugin {
 	 * @since 1.0.0
 	 */
 	function handle_smart_layers() {
-		$rules    = dp_addthis_get_rules( 'smart_layers' );
-		$contexts = dp_addthis_get_contexts();
-		$tools    = dp_addthis_get_tools( array( 'is_smartlayer' => true ) );
-
 		$css = '.addthis-smartlayers{display:none;}.dp-addthis .addthis-smartlayers{display:block;}';
-		foreach ( $rules as $rule ) {
-			if ( ! in_array( $rule['context'], $contexts ) ) {
-				continue;
-			}
 
-			$tool = $rule['tool'];
+		$rules    = dp_addthis_get_rules( 'smart_layers' );
 
-			if ( ! empty( $tools[ $tool ]['selector'] ) ) {
-				$css .= $tools[ $tool ]['selector'] . '{display:block;}';
+		if(!empty($rules)) {
+
+			$contexts = dp_addthis_get_contexts();
+			$tools    = dp_addthis_get_tools( array( 'is_smartlayer' => true ) );
+
+			foreach ( $rules as $rule ) {
+				if ( ! in_array( $rule['context'], $contexts ) ) {
+					continue;
+				}
+
+				$tool = $rule['tool'];
+
+				if ( ! empty( $tools[ $tool ]['selector'] ) ) {
+					$css .= $tools[ $tool ]['selector'] . '{display:block;}';
+				}
 			}
 		}
 
@@ -178,15 +189,6 @@ class DP_AddThis_Plugin {
 //		);
 //
 //		wp_localize_script( 'dp-addthis', 'addthis_share', $addthis_share );
-	}
-
-	/**
-	 * Enqueue scripts.
-	 *
-	 * @since 1.0.0
-	 */
-	function enqueue_scripts() {
-		wp_enqueue_script( 'dp-addthis' );
 	}
 
 	/**
@@ -354,6 +356,9 @@ function dp_addthis( $args = '' ) {
  * @return string
  */
 function dp_get_addthis( $args = '' ) {
+
+	wp_enqueue_script('dp-addthis');
+
 	$defaults = array(
 		'tool'  => '',
 		'class' => '',
