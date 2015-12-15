@@ -4,7 +4,7 @@
  * Plugin Name: (dp) AddThis
  * Plugin URI: http://demixpress.com/plugins/dp-addthis/
  * Description: Displays AddThis tools on your site.
- * Version: 1.0
+ * Version: 1.0.1
  * Author: DemixPress
  * Author URI: http://demixpress.com/
  * Requires: 4.1 or higher
