@@ -44,7 +44,7 @@ class DP_AddThis_Plugin {
 		if ( $pubid) {
 			// enqueue scripts and styles
 			if($this->has_tool())
-				add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+				wp_enqueue_scripts('dp-addthis');
 
 			add_action( 'wp_head', array( $this, 'enqueue_styles' ) );
 
